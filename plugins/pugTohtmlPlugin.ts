@@ -1,18 +1,14 @@
 import path from 'path'
-import { compileFile, filters } from 'pug'
-import { parseVariantGroup } from '@unocss/core'
+import { compileFile } from 'pug'
+import { parseVariantGroup } from 'unocss'
+import type { Plugin as VitePlugin } from 'vite'
 
-function getShortName(file, root) {
-  return file.startsWith(root + '/') ? path.posix.relative(root, file) : file
-}
-
-export default function ({ pugOptions = {}, pugLocals = {} } = {}) {
-  const plugin = {
+export default function ({ pugOptions = {}, pugLocals = {} } = {}): VitePlugin {
+  const plugin: VitePlugin = {
     name: 'vite-plugin-pug-transformer',
 
     handleHotUpdate({ file, server }) {
       if (file.endsWith('.pug')) {
-        server.config.logger.info({ clear: true, timestamp: true })
         server.ws.send({
           type: 'full-reload'
         })
@@ -48,10 +44,6 @@ export default function ({ pugOptions = {}, pugLocals = {} } = {}) {
       }
     }
   }
-
-  // Properties for supporting old versions of Vite
-  plugin.transformIndexHtml.order = plugin.transformIndexHtml.order
-  plugin.transformIndexHtml.order = plugin.transformIndexHtml.order
 
   return plugin
 }

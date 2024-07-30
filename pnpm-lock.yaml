@@ -7,23 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@unocss/core':
-        specifier: ^0.61.6
-        version: 0.61.6
-      '@unocss/reset':
-        specifier: ^0.61.5
-        version: 0.61.5
-      vite-plugin-pug-transformer:
-        specifier: ^1.0.5
-        version: 1.0.5(vite@5.3.5(stylus@0.63.0))
     devDependencies:
-      '@unocss/extractor-pug':
-        specifier: ^0.61.5
-        version: 0.61.5(pug@3.0.3)
-      '@unocss/transformer-variant-group':
-        specifier: ^0.61.5
-        version: 0.61.5
+      '@types/node':
+        specifier: ^22.0.0
+        version: 22.0.0
       pug:
         specifier: ^3.0.3
         version: 3.0.3
@@ -35,16 +22,10 @@ importers:
         version: 5.5.4
       unocss:
         specifier: ^0.61.5
-        version: 0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(stylus@0.63.0))
+        version: 0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
       vite:
         specifier: ^5.3.4
-        version: 5.3.5(stylus@0.63.0)
-      vite-plugin-windicss:
-        specifier: ^1.9.3
-        version: 1.9.3(vite@5.3.5(stylus@0.63.0))
-      windicss:
-        specifier: ^3.5.6
-        version: 3.5.6
+        version: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
 
 packages:
 
@@ -488,6 +469,9 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==, tarball: https://registry.npmmirror.com/@types/estree/-/estree-1.0.5.tgz}
 
+  '@types/node@22.0.0':
+    resolution: {integrity: sha512-VT7KSYudcPOzP5Q0wfbowyNLaVR8QWUdw+088uFWwfvpY6uCWaXpqV6ieLAu9WBcnTa7H4Z5RLK8I5t2FuOcqw==, tarball: https://registry.npmmirror.com/@types/node/-/node-22.0.0.tgz}
+
   '@unocss/astro@0.61.5':
     resolution: {integrity: sha512-keyh6/EsPMBEiLguaOsh47UcMkWCGT0rW3KV5aYRUfYXlgccSzDd4SLmTNsdlGXIso2XCl/14BJQuwjP0UEU0Q==, tarball: https://registry.npmmirror.com/@unocss/astro/-/astro-0.61.5.tgz}
     peerDependencies:
@@ -513,14 +497,6 @@ packages:
 
   '@unocss/extractor-arbitrary-variants@0.61.5':
     resolution: {integrity: sha512-UB1EweAaJrUxv+h3n5FqoizKHrnUgUzkdmOdJTfV6xvow90ITqbUoza+L6iVMNfcrcXTx8QpDnWh6rhLRyKY+g==, tarball: https://registry.npmmirror.com/@unocss/extractor-arbitrary-variants/-/extractor-arbitrary-variants-0.61.5.tgz}
-
-  '@unocss/extractor-pug@0.61.5':
-    resolution: {integrity: sha512-qJo9DyCUIGEsewMd+LFMsleVAJN0cOgnwhijfNFSTXGHJUCSnU9jJpRmUF8fOEe/4DKp1v9oR2qFb3Dk//mFBw==, tarball: https://registry.npmmirror.com/@unocss/extractor-pug/-/extractor-pug-0.61.5.tgz}
-    peerDependencies:
-      pug: ^3.0.0
-    peerDependenciesMeta:
-      pug:
-        optional: true
 
   '@unocss/inspector@0.61.5':
     resolution: {integrity: sha512-DIT+hgTphHXZTJEe4ZWUoYoQUNszmVJr06+gGhBkKwpdetQa6B2N+zGLkAxgAvo/BUmk29tOORIBu7AyoloRUA==, tarball: https://registry.npmmirror.com/@unocss/inspector/-/inspector-0.61.5.tgz}
@@ -584,12 +560,6 @@ packages:
     resolution: {integrity: sha512-+U5Ey5Z2csjLy7zcaDCtUqs08+ugRK87UWGm65W8yMAGW7me72f36QR8IHJUTqlVVEdhbJVIAy+yNFjGHYffjA==, tarball: https://registry.npmmirror.com/@unocss/vite/-/vite-0.61.5.tgz}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
-
-  '@windicss/config@1.9.3':
-    resolution: {integrity: sha512-u8GUjsfC9r5X1AGYhzb1lX3zZj8wqk6SH1DYex8XUGmZ1M2UpvnUPOFi63XFViduspQ6l2xTX84QtG+lUzhEoQ==, tarball: https://registry.npmmirror.com/@windicss/config/-/config-1.9.3.tgz}
-
-  '@windicss/plugin-utils@1.9.3':
-    resolution: {integrity: sha512-3VG5HEGeuIfG/9iTwLyzWWm/aGKNTbtSVkpkAabdRuDP/2lEmf6Hpo4uo5drwE+2O9gXfc6nSYgAwBjotx5CfQ==, tarball: https://registry.npmmirror.com/@windicss/plugin-utils/-/plugin-utils-1.9.3.tgz}
 
   acorn@7.4.1:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==, tarball: https://registry.npmmirror.com/acorn/-/acorn-7.4.1.tgz}
@@ -1162,6 +1132,9 @@ packages:
   unconfig@0.3.13:
     resolution: {integrity: sha512-N9Ph5NC4+sqtcOjPfHrRcHekBCadCXWTBzp2VYYbySOHW0PfD9XLCeXshTXjkPYwLrBr9AtSeU0CZmkYECJhng==, tarball: https://registry.npmmirror.com/unconfig/-/unconfig-0.3.13.tgz}
 
+  undici-types@6.11.1:
+    resolution: {integrity: sha512-mIDEX2ek50x0OlRgxryxsenE5XaQD4on5U2inY7RApK3SOJpofyw7uW2AyfMKkhAxXIceo2DeWGVGwyvng1GNQ==, tarball: https://registry.npmmirror.com/undici-types/-/undici-types-6.11.1.tgz}
+
   unocss@0.61.5:
     resolution: {integrity: sha512-BScwlqXW9KHQLKIKtXmwWmMb4Ihoryb7uIgmS+HSqmCN58eqNA73vAo3cZ97xtO+RFdauqgGKP5wD6ShQUvqnQ==, tarball: https://registry.npmmirror.com/unocss/-/unocss-0.61.5.tgz}
     engines: {node: '>=14'}
@@ -1179,17 +1152,6 @@ packages:
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
-
-  vite-plugin-pug-transformer@1.0.5:
-    resolution: {integrity: sha512-FGtYP4kyn5ss/UnA1uikz+bX5zJVscPrBkSyrXeiZbhbh+qJCRwMHMy+mGv0I9xY0j6/iUCKk8AESUjnxQpBmw==, tarball: https://registry.npmmirror.com/vite-plugin-pug-transformer/-/vite-plugin-pug-transformer-1.0.5.tgz}
-    engines: {node: '>=12.22.0'}
-    peerDependencies:
-      vite: ^2.5.10 || ^3.0.0 || ^4.0.0 || ^5.0.0
-
-  vite-plugin-windicss@1.9.3:
-    resolution: {integrity: sha512-PqNiIsrEftCrgn0xIpj8ZMSdpz8NZn+OJ3gKXnOF+hFzbHFrKGJA49ViOUKCHDOquxoGBZMmTjepWr8GrftKcQ==, tarball: https://registry.npmmirror.com/vite-plugin-windicss/-/vite-plugin-windicss-1.9.3.tgz}
-    peerDependencies:
-      vite: ^2.0.1 || ^3.0.0 || ^4.0.0 || ^5.0.0
 
   vite@5.3.5:
     resolution: {integrity: sha512-MdjglKR6AQXQb9JGiS7Rc2wC6uMjcm7Go/NHNO63EwiJXfuk9PgqiP/n5IDJCziMkfw9n4Ubp7lttNwz+8ZVKA==, tarball: https://registry.npmmirror.com/vite/-/vite-5.3.5.tgz}
@@ -1226,11 +1188,6 @@ packages:
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==, tarball: https://registry.npmmirror.com/which/-/which-2.0.2.tgz}
     engines: {node: '>= 8'}
-    hasBin: true
-
-  windicss@3.5.6:
-    resolution: {integrity: sha512-P1mzPEjgFMZLX0ZqfFht4fhV/FX8DTG7ERG1fBLiWvd34pTLVReS5CVsewKn9PApSgXnVfPWwvq+qUsRwpnwFA==, tarball: https://registry.npmmirror.com/windicss/-/windicss-3.5.6.tgz}
-    engines: {node: '>= 12'}
     hasBin: true
 
   with@7.0.2:
@@ -1656,13 +1613,17 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@unocss/astro@0.61.5(rollup@4.19.0)(vite@5.3.5(stylus@0.63.0))':
+  '@types/node@22.0.0':
+    dependencies:
+      undici-types: 6.11.1
+
+  '@unocss/astro@0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))':
     dependencies:
       '@unocss/core': 0.61.5
       '@unocss/reset': 0.61.5
-      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(stylus@0.63.0))
+      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
     optionalDependencies:
-      vite: 5.3.5(stylus@0.63.0)
+      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
     transitivePeerDependencies:
       - rollup
 
@@ -1696,10 +1657,6 @@ snapshots:
   '@unocss/extractor-arbitrary-variants@0.61.5':
     dependencies:
       '@unocss/core': 0.61.5
-
-  '@unocss/extractor-pug@0.61.5(pug@3.0.3)':
-    optionalDependencies:
-      pug: 3.0.3
 
   '@unocss/inspector@0.61.5':
     dependencies:
@@ -1799,7 +1756,7 @@ snapshots:
     dependencies:
       '@unocss/core': 0.61.5
 
-  '@unocss/vite@0.61.5(rollup@4.19.0)(vite@5.3.5(stylus@0.63.0))':
+  '@unocss/vite@0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.19.0)
@@ -1811,29 +1768,9 @@ snapshots:
       chokidar: 3.6.0
       fast-glob: 3.3.2
       magic-string: 0.30.10
-      vite: 5.3.5(stylus@0.63.0)
+      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
     transitivePeerDependencies:
       - rollup
-
-  '@windicss/config@1.9.3':
-    dependencies:
-      debug: 4.3.5
-      jiti: 1.21.6
-      windicss: 3.5.6
-    transitivePeerDependencies:
-      - supports-color
-
-  '@windicss/plugin-utils@1.9.3':
-    dependencies:
-      '@antfu/utils': 0.7.10
-      '@windicss/config': 1.9.3
-      debug: 4.3.5
-      fast-glob: 3.3.2
-      magic-string: 0.30.10
-      micromatch: 4.0.7
-      windicss: 3.5.6
-    transitivePeerDependencies:
-      - supports-color
 
   acorn@7.4.1: {}
 
@@ -2440,9 +2377,11 @@ snapshots:
       defu: 6.1.4
       jiti: 1.21.6
 
-  unocss@0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(stylus@0.63.0)):
+  undici-types@6.11.1: {}
+
+  unocss@0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)):
     dependencies:
-      '@unocss/astro': 0.61.5(rollup@4.19.0)(vite@5.3.5(stylus@0.63.0))
+      '@unocss/astro': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
       '@unocss/cli': 0.61.5(rollup@4.19.0)
       '@unocss/core': 0.61.5
       '@unocss/extractor-arbitrary-variants': 0.61.5
@@ -2461,9 +2400,9 @@ snapshots:
       '@unocss/transformer-compile-class': 0.61.5
       '@unocss/transformer-directives': 0.61.5
       '@unocss/transformer-variant-group': 0.61.5
-      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(stylus@0.63.0))
+      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
     optionalDependencies:
-      vite: 5.3.5(stylus@0.63.0)
+      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -2475,28 +2414,13 @@ snapshots:
       escalade: 3.1.2
       picocolors: 1.0.1
 
-  vite-plugin-pug-transformer@1.0.5(vite@5.3.5(stylus@0.63.0)):
-    dependencies:
-      picocolors: 1.0.1
-      pug: 3.0.3
-      vite: 5.3.5(stylus@0.63.0)
-
-  vite-plugin-windicss@1.9.3(vite@5.3.5(stylus@0.63.0)):
-    dependencies:
-      '@windicss/plugin-utils': 1.9.3
-      debug: 4.3.5
-      kolorist: 1.8.0
-      vite: 5.3.5(stylus@0.63.0)
-      windicss: 3.5.6
-    transitivePeerDependencies:
-      - supports-color
-
-  vite@5.3.5(stylus@0.63.0):
+  vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.40
       rollup: 4.19.0
     optionalDependencies:
+      '@types/node': 22.0.0
       fsevents: 2.3.3
       stylus: 0.63.0
 
@@ -2505,8 +2429,6 @@ snapshots:
   which@2.0.2:
     dependencies:
       isexe: 2.0.0
-
-  windicss@3.5.6: {}
 
   with@7.0.2:
     dependencies:

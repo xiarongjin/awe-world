@@ -1,4 +1,4 @@
-import type { Extractor } from '@unocss/core'
+import type { Extractor } from 'unocss'
 import type { Options } from 'pug'
 import Pug from 'pug'
 
