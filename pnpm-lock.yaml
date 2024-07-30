@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@iconify/utils':
+        specifier: ^2.1.29
+        version: 2.1.29
       '@types/node':
         specifier: ^22.0.0
         version: 22.0.0
@@ -332,8 +335,8 @@ packages:
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==, tarball: https://registry.npmmirror.com/@iconify/types/-/types-2.0.0.tgz}
 
-  '@iconify/utils@2.1.25':
-    resolution: {integrity: sha512-Y+iGko8uv/Fz5bQLLJyNSZGOdMW0G7cnlEX1CiNcKsRXX9cq/y/vwxrIAtLCZhKHr3m0VJmsjVPsvnM4uX8YLg==, tarball: https://registry.npmmirror.com/@iconify/utils/-/utils-2.1.25.tgz}
+  '@iconify/utils@2.1.29':
+    resolution: {integrity: sha512-wCcTsmlJvTi1VWBgcJ7HeuWlh7gLGWY7L9HmbgMfjOfsoo7DADemB2Nqnrw1KvCdEAxLL5wTMBAOP5BesFrtng==, tarball: https://registry.npmmirror.com/@iconify/utils/-/utils-2.1.29.tgz}
 
   '@jridgewell/gen-mapping@0.3.5':
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==, tarball: https://registry.npmmirror.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.5.tgz}
@@ -1512,7 +1515,7 @@ snapshots:
 
   '@iconify/types@2.0.0': {}
 
-  '@iconify/utils@2.1.25':
+  '@iconify/utils@2.1.29':
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.10
@@ -1681,7 +1684,7 @@ snapshots:
 
   '@unocss/preset-icons@0.61.5':
     dependencies:
-      '@iconify/utils': 2.1.25
+      '@iconify/utils': 2.1.29
       '@unocss/core': 0.61.5
       ofetch: 1.3.4
     transitivePeerDependencies:
