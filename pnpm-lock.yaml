@@ -14,6 +14,9 @@ importers:
       '@types/node':
         specifier: ^22.0.0
         version: 22.0.0
+      '@unocss/reset':
+        specifier: ^0.61.7
+        version: 0.61.7
       pug:
         specifier: ^3.0.3
         version: 3.0.3
@@ -25,10 +28,10 @@ importers:
         version: 5.5.4
       unocss:
         specifier: ^0.61.5
-        version: 0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
+        version: 0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3))
       vite:
         specifier: ^5.3.4
-        version: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
+        version: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3)
 
 packages:
 
@@ -350,6 +353,9 @@ packages:
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==, tarball: https://registry.npmmirror.com/@jridgewell/set-array/-/set-array-1.2.1.tgz}
     engines: {node: '>=6.0.0'}
 
+  '@jridgewell/source-map@0.3.6':
+    resolution: {integrity: sha512-1ZJTZebgqllO79ue2bm3rIGud/bOe0pP5BjSRCRxxYkEZS8STV7zN84UBbiYu7jy+eCKSnVIUgoWWE/tt+shMQ==, tarball: https://registry.npmmirror.com/@jridgewell/source-map/-/source-map-0.3.6.tgz}
+
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==, tarball: https://registry.npmmirror.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz}
 
@@ -537,6 +543,9 @@ packages:
   '@unocss/reset@0.61.5':
     resolution: {integrity: sha512-5FKNsHnke9J1Z0T4prOZn9hkWh86c6Px+Oh3xf8mDd6dDw8CjzYMRxZEKti0gt13NcsO29G1vLGM7UjG1sCamg==, tarball: https://registry.npmmirror.com/@unocss/reset/-/reset-0.61.5.tgz}
 
+  '@unocss/reset@0.61.7':
+    resolution: {integrity: sha512-1I1VbfUkJRlqPfh13iCQY4vH172YbqX2W2EMdnkrprqv/AqNvvTdVtrKwHexUdIpWTpMligFhCJ31ydkw3CwqQ==, tarball: https://registry.npmmirror.com/@unocss/reset/-/reset-0.61.7.tgz}
+
   '@unocss/rule-utils@0.61.5':
     resolution: {integrity: sha512-sCHnpCQoj3/ZmCjYo+oW3+4r5Z8kFI2snEL+miU2Uk0SqCgY1k0cUIYivj5L9ghp29p8VjEusX9M01QEZOYK7g==, tarball: https://registry.npmmirror.com/@unocss/rule-utils/-/rule-utils-0.61.5.tgz}
     engines: {node: '>=14'}
@@ -611,6 +620,9 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
+  buffer-from@1.1.2:
+    resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==, tarball: https://registry.npmmirror.com/buffer-from/-/buffer-from-1.1.2.tgz}
+
   cac@6.7.14:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==, tarball: https://registry.npmmirror.com/cac/-/cac-6.7.14.tgz}
     engines: {node: '>=8'}
@@ -641,6 +653,9 @@ packages:
 
   colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==, tarball: https://registry.npmmirror.com/colorette/-/colorette-2.0.20.tgz}
+
+  commander@2.20.3:
+    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==, tarball: https://registry.npmmirror.com/commander/-/commander-2.20.3.tgz}
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==, tarball: https://registry.npmmirror.com/concat-map/-/concat-map-0.0.1.tgz}
@@ -1089,6 +1104,13 @@ packages:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==, tarball: https://registry.npmmirror.com/source-map-js/-/source-map-js-1.2.0.tgz}
     engines: {node: '>=0.10.0'}
 
+  source-map-support@0.5.21:
+    resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==, tarball: https://registry.npmmirror.com/source-map-support/-/source-map-support-0.5.21.tgz}
+
+  source-map@0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==, tarball: https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz}
+    engines: {node: '>=0.10.0'}
+
   source-map@0.7.4:
     resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==, tarball: https://registry.npmmirror.com/source-map/-/source-map-0.7.4.tgz}
     engines: {node: '>= 8'}
@@ -1108,6 +1130,11 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==, tarball: https://registry.npmmirror.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz}
     engines: {node: '>= 0.4'}
+
+  terser@5.31.3:
+    resolution: {integrity: sha512-pAfYn3NIZLyZpa83ZKigvj6Rn9c/vd5KfYGX7cN1mnzqgDcxWvrU5ZtAfIKhEXz9nRecw4z3LXkjaq96/qZqAA==, tarball: https://registry.npmmirror.com/terser/-/terser-5.31.3.tgz}
+    engines: {node: '>=10'}
+    hasBin: true
 
   to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==, tarball: https://registry.npmmirror.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz}
@@ -1537,6 +1564,12 @@ snapshots:
 
   '@jridgewell/set-array@1.2.1': {}
 
+  '@jridgewell/source-map@0.3.6':
+    dependencies:
+      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/trace-mapping': 0.3.25
+    optional: true
+
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@jridgewell/trace-mapping@0.3.25':
@@ -1620,13 +1653,13 @@ snapshots:
     dependencies:
       undici-types: 6.11.1
 
-  '@unocss/astro@0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))':
+  '@unocss/astro@0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3))':
     dependencies:
       '@unocss/core': 0.61.5
       '@unocss/reset': 0.61.5
-      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
+      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3))
     optionalDependencies:
-      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
+      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3)
     transitivePeerDependencies:
       - rollup
 
@@ -1725,6 +1758,8 @@ snapshots:
 
   '@unocss/reset@0.61.5': {}
 
+  '@unocss/reset@0.61.7': {}
+
   '@unocss/rule-utils@0.61.5':
     dependencies:
       '@unocss/core': 0.61.6
@@ -1759,7 +1794,7 @@ snapshots:
     dependencies:
       '@unocss/core': 0.61.5
 
-  '@unocss/vite@0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))':
+  '@unocss/vite@0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.19.0)
@@ -1771,7 +1806,7 @@ snapshots:
       chokidar: 3.6.0
       fast-glob: 3.3.2
       magic-string: 0.30.10
-      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
+      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3)
     transitivePeerDependencies:
       - rollup
 
@@ -1816,6 +1851,9 @@ snapshots:
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.2)
 
+  buffer-from@1.1.2:
+    optional: true
+
   cac@6.7.14: {}
 
   call-bind@1.0.7:
@@ -1857,6 +1895,9 @@ snapshots:
   color-name@1.1.3: {}
 
   colorette@2.0.20: {}
+
+  commander@2.20.3:
+    optional: true
 
   concat-map@0.0.1: {}
 
@@ -2340,6 +2381,15 @@ snapshots:
 
   source-map-js@1.2.0: {}
 
+  source-map-support@0.5.21:
+    dependencies:
+      buffer-from: 1.1.2
+      source-map: 0.6.1
+    optional: true
+
+  source-map@0.6.1:
+    optional: true
+
   source-map@0.7.4: {}
 
   strip-final-newline@2.0.0: {}
@@ -2359,6 +2409,14 @@ snapshots:
       has-flag: 3.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  terser@5.31.3:
+    dependencies:
+      '@jridgewell/source-map': 0.3.6
+      acorn: 8.12.1
+      commander: 2.20.3
+      source-map-support: 0.5.21
+    optional: true
 
   to-fast-properties@2.0.0: {}
 
@@ -2382,9 +2440,9 @@ snapshots:
 
   undici-types@6.11.1: {}
 
-  unocss@0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)):
+  unocss@0.61.5(postcss@8.4.40)(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3)):
     dependencies:
-      '@unocss/astro': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
+      '@unocss/astro': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3))
       '@unocss/cli': 0.61.5(rollup@4.19.0)
       '@unocss/core': 0.61.5
       '@unocss/extractor-arbitrary-variants': 0.61.5
@@ -2403,9 +2461,9 @@ snapshots:
       '@unocss/transformer-compile-class': 0.61.5
       '@unocss/transformer-directives': 0.61.5
       '@unocss/transformer-variant-group': 0.61.5
-      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0))
+      '@unocss/vite': 0.61.5(rollup@4.19.0)(vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3))
     optionalDependencies:
-      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)
+      vite: 5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -2417,7 +2475,7 @@ snapshots:
       escalade: 3.1.2
       picocolors: 1.0.1
 
-  vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0):
+  vite@5.3.5(@types/node@22.0.0)(stylus@0.63.0)(terser@5.31.3):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.40
@@ -2426,6 +2484,7 @@ snapshots:
       '@types/node': 22.0.0
       fsevents: 2.3.3
       stylus: 0.63.0
+      terser: 5.31.3
 
   void-elements@3.1.0: {}
 

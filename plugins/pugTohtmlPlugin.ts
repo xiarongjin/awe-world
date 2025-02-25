@@ -6,7 +6,6 @@ import type { Plugin as VitePlugin } from 'vite'
 export default function ({ pugOptions = {}, pugLocals = {} } = {}): VitePlugin {
   const plugin: VitePlugin = {
     name: 'vite-plugin-pug-transformer',
-
     handleHotUpdate({ file, server }) {
       if (file.endsWith('.pug')) {
         server.ws.send({
@@ -16,7 +15,6 @@ export default function ({ pugOptions = {}, pugLocals = {} } = {}): VitePlugin {
         return []
       }
     },
-
     transformIndexHtml: {
       order: 'pre',
       handler(html, { filename }) {

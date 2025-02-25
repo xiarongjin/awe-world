@@ -1,5 +1,4 @@
 // uno.config.ts
-import fs from 'node:fs/promises'
 import { defineConfig } from 'unocss'
 import {
   presetAttributify,
